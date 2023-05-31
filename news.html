@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>News Posting Application</title>
+  <link rel="stylesheet" type="text/css" href="news.css">
+</head>
+<body>
+  <header>
+    <h1>News Posting Application</h1>
+  </header>
+  
+  <main>
+    <div class="container">
+      <form id="newsForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" rows="5" required></textarea>
+        
+        <input type="submit" id="submitBtn" value="Post News" class="btn">
+      </form>
+      
+      <div id="loadingOverlay">
+        <div id="loadingAnimation"></div>
+      </div>
+      
+      <div id="successMessage">
+        <p>Post submitted successfully!</p>
+      </div>
+      <div id="failMessage">
+        <p>Post submitted Failed!</p>
+      </div>
+    </div>
+  </main>
+ 
+
+  <script src="news.js"></script>
+
+
+  <!-- Call the handleClientLoad function when the API client script is loaded -->
+  <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+</body>
+</html>

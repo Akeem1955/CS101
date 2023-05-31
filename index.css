@@ -1,0 +1,121 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.utility-item{
+    height: 200px;
+    background-color: #325B99;
+}
+.tool_btn{
+    cursor: pointer;
+}
+.tool_btn:hover {
+
+    color: rgb(90, 203, 88);
+}
+.tool_btn:hover ~ .tool_drop{
+    display: inline;
+    color: wheat;
+}
+.nav{
+    display: flex;
+}
+.tool_drop:hover {
+    display: block;
+}
+.tool_drop{
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+    z-index: 1;
+    border-radius: 10px ;
+}
+.tool_drop li{
+    padding: 5px;
+}
+@media screen and (max-width: 600px) {
+    .utility-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+        grid-gap: 10px; /* Gap between grid items */
+    }
+    .nav {
+        background-color: blue;
+        width: 100%;
+        height: 50px;
+        margin: 0;
+    }
+    footer {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+        position: sticky;
+        bottom: 0;
+    }
+}
+@media screen and (min-width: 601px)and (max-width: 767px) {
+    .utility-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+        grid-gap: 10px; /* Gap between grid items */
+    }
+    .nav {
+        background-color: blue;
+        width: 100%;
+        height: 50px;
+        margin: 0;
+    }
+    footer {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+        position: sticky;
+        bottom: 0;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .utility-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+        grid-gap: 10px; /* Gap between grid items */
+    }
+    footer {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+        position: sticky;
+        bottom: 0;
+    }
+    .nav {
+        background-color: blue;
+        width: 100%;
+        height: 50px;
+        margin: 0;
+    }
+}
+@media screen and (min-width: 992px){
+    .utility-container{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+        grid-gap: 10px; /* Gap between grid items */
+    }
+    footer {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+        position: sticky;
+        bottom: 0;
+    }
+    .nav {
+        background-color: blue;
+        width: 100%;
+        height: 50px;
+        margin: 0;
+    }
+}

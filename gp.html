@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CGPA Calculator</title>
+  <link rel="stylesheet" type="text/css" href="gp.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CGPA Calculator</h1>
+    <div class="grid-container">
+      <div class="semester-section">
+        <h2>First Semester</h2>
+        <form id="form1">
+          <div>
+            <label for="subject1">Subject:</label>
+            <input type="text" id="subject1" required>
+          </div>
+          <div>
+            <label for="credit1">Credit Units:</label>
+            <input type="number" id="credit1" required>
+          </div>
+          <div>
+            <label for="score1">Score:</label>
+            <input type="number" id="score1" required>
+          </div>
+          <button type="button" id="addCourse1">Add Course</button>
+        </form>
+        <table id="courseTable1">
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Credit Units</th>
+              <th>Score</th>
+              <th>Quality Points</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="semester-section">
+        <h2>Second Semester</h2>
+        <form id="form2">
+          <div>
+            <label for="subject2">Subject:</label>
+            <input type="text" id="subject2">
+          </div>
+          <div>
+            <label for="credit2">Credit Units:</label>
+            <input type="number" id="credit2">
+          </div>
+          <div>
+            <label for="score2">Score:</label>
+            <input type="number" id="score2">
+          </div>
+          <button type="button" id="addCourse2">Add Course</button>
+        </form>
+        <table id="courseTable2">
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Credit Units</th>
+              <th>Score</th>
+              <th>Quality Points</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div id="result">
+      <h2>Result</h2>
+      <p>GPA: <span id="gpaValue"></span></p>
+      <p>CGPA: <span id="cgpaValue"></span></p>
+      <p id="errorMessage"></p>
+    </div>
+  </div>
+  <script src="gp.js"></script>
+</body>
+</html>
